@@ -20,13 +20,13 @@ def plot(frame, _rand):
 while (True):
     ret, frame = vid.read()
     x, y = np.meshgrid(np.linspace(-5, 5, 960), np.linspace(-5, 5, 960))
-    cv2.imshow('frame', frame)
+    cv2.imshow('To Ty!', frame)
     if cv2.waitKey(1) & 0xFF == ord('r'):
         _rand = not _rand
     if cv2.waitKey(1) & 0xFF == ord('p'):
         plot(frame, _rand)
         image= cv2.imread('picplot.png')
-        cv2.imshow('plot', image)
+        cv2.imshow('Jestes wektorem!', image)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
